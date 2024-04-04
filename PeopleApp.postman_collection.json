@@ -1,0 +1,424 @@
+{
+	"info": {
+		"_postman_id": "8c551580-385d-4a5b-bb76-be4c2cdf9b5e",
+		"name": "PeopleApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30391729"
+	},
+	"item": [
+		{
+			"name": "Location",
+			"item": [
+				{
+					"name": "Get Locations",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7202/api/Location",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7202",
+							"path": [
+								"api",
+								"Location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Location 3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7202/api/Location/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7202",
+							"path": [
+								"api",
+								"Location",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Location",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"city\": \"New York!\",\r\n    \"state\": \"NY\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7202/api/Location",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7202",
+							"path": [
+								"api",
+								"Location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Location",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"city\": \"Hasselt\",\r\n  \"state\": \"Limburg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7202/api/Location",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7202",
+							"path": [
+								"api",
+								"Location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Location 6",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7202/api/Location/6",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7202",
+							"path": [
+								"api",
+								"Location",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Department",
+			"item": [
+				{
+					"name": "Get Departments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7202/api/department",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7202",
+							"path": [
+								"api",
+								"department"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Department 4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7202/api/department/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7202",
+							"path": [
+								"api",
+								"department",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Department",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"name\": \"ICT Support\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7202/api/department",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7202",
+							"path": [
+								"api",
+								"department"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Department",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"ICT\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7202/api/department",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7202",
+							"path": [
+								"api",
+								"department"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Department 6",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7202/api/department/6",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7202",
+							"path": [
+								"api",
+								"department",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "People",
+			"item": [
+				{
+					"name": "Get People",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7202/api/people",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7202",
+							"path": [
+								"api",
+								"people"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Person 3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7202/api/people/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7202",
+							"path": [
+								"api",
+								"people",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Person",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"firstname\": \"Birgit\",\r\n    \"surname\": \"Becker\",\r\n    \"departmentId\": 4,\r\n    \"locationId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7202/api/people",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7202",
+							"path": [
+								"api",
+								"people"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Person",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstname\": \"Wim\",\r\n    \"surname\": \"Bervoets\",\r\n    \"departmentId\": 2,\r\n    \"locationId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7202/api/people",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7202",
+							"path": [
+								"api",
+								"people"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Person 6",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7202/api/people/6",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7202",
+							"path": [
+								"api",
+								"people",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
